@@ -7,6 +7,11 @@
         <link rel="stylesheet" href="css/styles.min.css">
     </head>
     <body>
+    <div class="preload">
+        <div>
+            <img src="assets/Rolling-1s-200px.gif">
+        </div>
+    </div>
     <div id="latte">
         <div class="panel_container">
             <div class="panel1"></div>
@@ -221,6 +226,12 @@
         </section>
         <script src="js/jquery.min.js"></script>
         <script>
+            $(window).on('load', function () {
+                $('.preload').fadeOut(500);
+                setTimeout(function(){
+                    $('#hide').fadeIn(1000).removeClass('hidden');
+                }, 1000);
+            });
             $(function() {
                 $('.hashscroll').click(function() {
                     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
