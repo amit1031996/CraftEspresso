@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Craft Espresso - Latté</title>
+    <link rel="stylesheet" href="css/styles.min.css">
+</head>
+<body>
+    <div id="nav1">
+        <div id="nav1_container">
+            <div id="nav1_white"></div>
+            <div id="mob_logo">
+                <svg id="mob_logo1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 109.15 66.31"><defs><style>.cls-1{font-size:47.19px;font-family:PainterPERSONALUSEONLY, Painter PERSONAL USE ONLY;}.cls-1,.cls-2{fill:#1a1a1a;}.cls-2{font-size:8.71px;font-family:Gotham-Medium, Gotham;letter-spacing:0.45em;}.cls-3{letter-spacing:0.44em;}</style></defs><title>logo_text</title><g id="Layer_2" data-name="Layer 2"><g id="Content"><text class="cls-1" transform="translate(6.7 40.58)">Craft&lt;</text><text class="cls-2" transform="translate(10.99 64.83) scale(1.12 1)">ESPRE<tspan class="cls-3" x="48.94" y="0">S</tspan><tspan x="58.35" y="0">SO</tspan></text></g></g></svg>
+                <img id="mob_logo2" src="assets/desk/1x/logo.png" alt="">
+            </div>
+            <div id="nav-icon3">
+                <div id="span_container">
+                        <span class="normal">
+                            <div class="normal_container">
+                                <div id="fill1"></div>
+                                <div id="gap1"></div>
+                            </div>
+                        </span>
+                    <span class="normal">
+                            <div class="normal_container">
+                                <div id="gap2"></div>
+                                <div id="fill2"></div>
+                            </div>
+                        </span>
+                    <span class="normal">
+                            <div class="normal_container">
+                                <div id="gap3"></div>
+                                <div id="fill3"></div>
+                                <div id="gap4"></div>
+                            </div>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="nav_tray">
+        <div></div>
+        <div style="text-align: center">
+            <div class="link"><a href="index.html#home">home</a></div>
+            <div class="link"><a href="index.html#process">process</a></div>
+            <div class="link"><a href="index.html#products">products</a></div>
+            <div class="link"><a href="index.html#contact">contact</a></div>
+        </div>
+        <div id="tray_line"></div>
+    </div>
+    <div id="latte_mob" class="checkout_container">
+        <div class="coffee_packet_mob"><img src="assets/desk/1x/latte.png" alt=""></div>
+        <div class="checkout_mob">
+            <div class="heading">Seasonal Spiced Latté</div>
+            <br> <br> <div class="tray_line"></div> <br>
+            A smooth blend of arabica and robusta. <br><br>
+            Perfect for milky lattes with a spicy overtone.
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script async>
+        $(document).ready(function() {
+            $(this).scrollTop(0);
+            $('#nav-icon3,.link a').click(function () {
+                $('#nav-icon3').toggleClass('open');
+                $('#nav1').toggleClass('open1');
+                $('#nav_tray').toggleClass('active');
+            });
+        });
+    </script>
+</body>
+</html>

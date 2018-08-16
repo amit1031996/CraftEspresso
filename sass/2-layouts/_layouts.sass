@@ -1,0 +1,424 @@
+#nav
+  width: 100%
+  height: 110px
+  position: fixed
+  z-index: 5
+#nav_container
+  height: 100%
+  width: 100%
+  position: relative
+
+#nav_white
+  position: absolute
+  height: 100%
+  width: 100%
+  top: -100%
+  box-shadow: 0 0 1px rgba(0,0,0,0.2)
+  background: $footer-background
+  transition: top 0.75s ease
+
+#nav_content
+  height: 100%
+  margin: 0 auto
+  display: flex
+
+#nav1
+  z-index: 3
+  position: fixed
+  height: 20vw
+  width: 100%
+  transition: all 0.75s ease
+#nav1_container
+  position: relative
+  height: 100%
+  width: 100%
+#nav1_white
+  position: absolute
+  height: 100%
+  width: 100%
+  top: -100%
+  background: $footer-background
+  transition: top 0.75s ease
+  box-shadow: 0 0 1px rgba(0,0,0,0.2)
+
+#nav_tray
+  z-index: 2
+  background: $footer-background
+  width: 100vw
+  height: calc(100vh - 14vw)
+  position: fixed
+  top: -100%
+  transition: top 0.75s ease
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  align-items: center
+  box-shadow: 0 0 1px rgba(0,0,0,0.2)
+  &.active
+    top: 14vw
+#nav_tray .link
+  font-family: helvetica-bold
+  font-size: 8vw
+  //text-transform: uppercase
+  //letter-spacing: 1.75vw
+  margin: 2vw
+  color: $default-text
+
+.content
+  height: 100%
+  //background: $transparent
+
+.left, .right
+  min-width: 75px
+  height: 100%
+  font-family: helvetica-bold-condensed
+  text-transform: uppercase
+  letter-spacing: 3px
+  display: flex
+  align-items: center
+  justify-content: center
+
+#intro
+  font-family: helvetica-light
+
+#process .content
+  position: relative
+  //background: $transparent
+  display: flex
+
+#process_background
+  z-index: -1
+  position: absolute
+  background: $process-background
+#process_img
+  width: 380px
+  //background: $transparent
+  position: relative
+
+#process_img div
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+  top: 50%
+  right: 50%
+  position: absolute
+  transition: all 0.75s ease
+
+#img_1
+  z-index: 1
+  -webkit-transform: translate(30%, -60%)
+  -moz-transform: translate(30%, -60%)
+  -o-transform: translate(30%, -60%)
+  transform: translate(30%, -60%)
+  background: url(../assets/desk/1x/process1.jpg) center/105% no-repeat
+
+#img_2
+  z-index: 2
+  -webkit-transform: translate(50%, -50%)
+  -moz-transform: translate(50%, -50%)
+  -o-transform: translate(50%, -50%)
+  transform: translate(50%, -50%)
+  background: url(../assets/desk/1x/process2.jpg) center/105% no-repeat
+
+#img_3
+  z-index: 3
+  -webkit-transform: translate(70%, -40%)
+  -moz-transform: translate(70%, -40%)
+  -o-transform: translate(70%, -40%)
+  transform: translate(70%, -40%)
+  background: url(../assets/desk/1x/process3.jpg) center/105% no-repeat
+
+#process_img2
+  position: relative
+  width: 100%
+  height: 100vw
+  margin-top: $mob-margin
+  & div
+    position: absolute
+    width: 37vw
+    height: 55vw
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+  & :nth-child(1)
+    margin-top: 5vw
+    left: 10vw
+  & :nth-child(2)
+    margin-top: 5vw
+    right: 10vw
+  & :nth-child(3)
+    top: 50%
+    left: 50%
+    -webkit-transform: translate(-50%, -50%)
+    -moz-transform: translate(-50%, -30%)
+    -o-transform: translate(-50%, -30%)
+    transform: translate(-50%, -30%)
+
+.img1_transition
+  -webkit-transform: translate(-10%, -70%) !important
+  -moz-transform: translate(-10%, -70%) !important
+  -o-transform: translate(-10%, -70%) !important
+  transform: translate(-10%, -70%) !important
+
+.img3_transition
+  -webkit-transform: translate(110%, -30%) !important
+  -moz-transform: translate(110%, -30%) !important
+  -o-transform: translate(110%, -30%) !important
+  transform: translate(110%, -30%) !important
+
+#process_content
+  width: 585px
+  margin-left: 30px
+  display: flex
+  flex-direction: column
+  align-items: flex-end
+  justify-content: center
+  //background: $transparent
+
+#products .content
+  position: relative
+
+#products_background
+  z-index: -1
+  position: absolute
+  background: $products-background
+
+#catalogue
+  height: 322px
+  & #catalogue_container
+    height: 100%
+    width: 100%
+    position: relative
+  & #catalogue_container div
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+    font-family: helvetica-bold
+    padding: 15px
+    color: $catalogue-default
+    box-sizing: border-box
+    transition: all 0.75s ease
+    cursor: pointer
+  & #catalogue_container div:hover
+    box-shadow: -2px 2px 20px rgba(0, 0, 0, 0.5)
+  & #product1
+    position: absolute
+    left: 0
+    background: url(../assets/desk/1x/product1.jpg) center/101% no-repeat
+  & #product2
+    position: absolute
+    background: url(../assets/desk/1x/product2.jpg) center/101% no-repeat
+  & #product3
+    position: absolute
+    background: url(../assets/desk/1x/product3.jpg) center/101% no-repeat
+
+.product2_transition
+  left: 50% !important
+  -webkit-transform: translateX(-50%)
+  -moz-transform: translateX(-50%)
+  -o-transform: translateX(-50%)
+  transform: translateX(-50%)
+.product3_transition
+  right: 0 !important
+
+#catalogue1
+  & div
+    width: 60vw
+    height: 72vw
+    margin: 0 auto
+    margin-bottom: 12vw
+    font-family: helvetica-bold
+    color: $catalogue-default
+    box-sizing: border-box
+    padding: 5vw
+    font-size: 10vw
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+  & div:nth-of-type(1)
+    background: url(../assets/desk/1x/product1.jpg) center/101% no-repeat
+  & div:nth-of-type(2)
+    background: url(../assets/desk/1x/product2.jpg) center/101% no-repeat
+  & div:nth-of-type(3)
+    background: url(../assets/desk/1x/product3.jpg) center/101% no-repeat
+
+#contact .content
+  margin: 0 auto
+  display: flex
+  justify-content: space-between
+  #contact_info
+    flex: 6
+    margin-right: 30px
+    display: flex
+    justify-content: center
+    align-items: center
+  #contact_logo
+    flex: 3
+    display: flex
+    justify-content: flex-end
+    align-items: center
+
+  #info_container
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    min-width: 100%
+
+.panel_container
+  width: 100%
+  height: 100%
+  position: relative
+  transition: background 0.75s ease
+  &.select
+    background: $transparent
+
+#latte
+  background: none
+  z-index: 9
+  position: fixed
+  left: -100%
+  height: 100%
+  width: 100%
+  & .panel1, & .panel2
+    height: 50%
+    width: 100%
+    background: $footer-background
+    left: -100%
+  & .panel2
+    top: 50%
+  .panel1.select1, .panel2.select1
+    left: 0
+  &.select
+    left: 0
+  & .tray_line
+    background: #6BAD8A
+    height: 2px !important
+
+#mocha
+  background: none
+  z-index: 9
+  position: fixed
+  right: -100%
+  height: 100%
+  width: 100%
+  & .panel1, & .panel2
+    height: 100%
+    width: 50%
+    background: $footer-background
+    top: -100%
+  & .panel2
+    left: 50%
+  .panel1.select1, .panel2.select1
+    top: 0
+  &.select
+    right: 0
+  & .tray_line
+    background: #D3B04A
+    height: 2px !important
+
+#black
+  background: none
+  z-index: 9
+  position: fixed
+  top: -100%
+  height: 100%
+  width: 100%
+  & .panel1, & .panel2
+    height: 50%
+    width: 100%
+    background: $footer-background
+    right: -100%
+  & .panel2
+    top: 50%
+  .panel1.select1, .panel2.select1
+    right: 0
+  &.select
+    top: 0
+  & .tray_line
+    background: #3E97A1
+    height: 2px !important
+
+
+.panel1
+  z-index: 8
+  position: absolute
+  transition: all 0.5s ease
+.panel2
+  z-index: 8
+  position: absolute
+  transition: all 0.5s ease
+
+.content_container
+  position: absolute
+  z-index: 10
+  height: 100%
+  //background: $transparent
+  left: 50%
+  -webkit-transform: translate(-50%, 0)
+  -moz-transform: translate(-50%, 0)
+  -o-transform: translate(-50%, 0)
+  transform: translate(-50%, 0)
+  display: flex
+  justify-content: space-between
+  align-items: center
+  opacity: 0
+  transition: opacity 0.75s ease
+  &.select
+    opacity: 1
+
+
+.frame
+  border-radius: 100px
+  position: absolute
+  height: 90%
+  width: 80%
+  top: 50%
+  left: 50%
+  -webkit-transform: translate(-50%, -50%)
+  -moz-transform: translate(-50%, -50%)
+  -o-transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%)
+#latte .frame
+  border: 5px dotted #6BAD8A
+#mocha .frame
+  border: 5px dotted #D3B04A
+#black .frame
+  border: 5px dotted #3E97A1
+.checkout
+  font-family: helvetica-light !important
+  z-index: 10
+  border-radius: 100px
+  background: $footer-background
+  display: flex
+  justify-content: center
+  flex-direction: column
+  padding: 30px
+  & .heading
+    font-size: 50px
+#latte .checkout
+  border: 3px solid #6BAD8A
+#mocha .checkout
+  border: 3px solid #D3B04A
+#black .checkout
+  border: 3px solid #3E97A1
+
+.coffee_packet
+  -webkit-transform: translate(-20%, -5%)
+  -moz-transform: translate(-20%, -5%)
+  -o-transform: translate(-20%, -5%)
+  transform: translate(-20%, -5%)
+
+.coffee_packet_mob img
+  -webkit-transform: translate(-25%, 0)
+  -moz-transform: translate(-25%, 0)
+  -o-transform: translate(-25%, 0)
+  transform: translate(-25%, 0)
+  width: 100vw
+.checkout_mob
+  margin-top: 20vw
+  font-size: 4vw
+  font-family: helvetica-light
+  text-align: center
+  width: 100%
+  flex-direction: column
+  display: flex
+  align-items: center
+  & .heading
+    font-size: 8vw
+.checkout_container
+  height: 100vh
+  display: flex
+  flex-direction: column
+  justify-content: center

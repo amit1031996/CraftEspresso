@@ -1,0 +1,25 @@
+/*Fonts */
+@font-face {
+  font-family: helvetica-bold;
+  src: url(../fonts/HelveticaNeueLTPro-Bd.otf); }
+@font-face {
+  font-family: helvetica-bold-condensed;
+  src: url(../fonts/HelveticaNeueLTPro-BdCn.otf); }
+@font-face {
+  font-family: helvetica-light;
+  src: url(../fonts/HelveticaNeueLTPro-Lt.otf); }
+@font-face {
+  font-family: baskerville-italic;
+  src: url(../fonts/LibreBaskerville-Italic.ttf); }
+@font-face {
+  font-family: painter;
+  src: url(../fonts/Painter_PERSONAL_USE_ONLY.ttf); }
+@font-face {
+  font-family: tomatoes;
+  src: url(../fonts/TOMATOES.ttf); }
+/*Background Colors */
+/*Text Colors */
+/*Margins */
+/*Widths */
+
+/*# sourceMappingURL=variables.css.map */

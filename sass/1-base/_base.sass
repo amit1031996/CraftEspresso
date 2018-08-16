@@ -1,0 +1,284 @@
+
+
+
+*
+//box-sizing: border-box
+//background: rgba(0,0,0,0.2)
+
+html, body
+  width: 100vw
+  height: 100vh
+  padding: 0
+  margin: 0
+
+body
+  -moz-osx-font-smoothing: grayscale
+  -webkit-font-smoothing: antialiased
+  background: $body-background
+  color: $default-text
+
+
+
+#contact
+  width: 100%
+  height: 30%
+  background: $footer-background
+
+
+/* Mobile */
+@media only screen and (min-width : 0px) and (max-width : 767px)
+  #home
+    height: 100vw
+  #nav
+    display: none
+  #home
+    background: url(../assets/mob/2x/cover.jpg) center/cover no-repeat
+  #home .content
+    margin: 0 auto
+    width: 80vw
+    display: flex
+    justify-content: center
+    flex-direction: column
+  #process
+    height: 180vw
+  #process .content
+    flex-direction: column
+  #process_content
+    width: 80vw !important
+    display: block !important
+    margin: 0 auto !important
+    text-align: center
+    margin-bottom: 15vw
+    font-size: 4vw
+  .heading
+    font-size: 6vw
+  #process_img div
+    height: 277px
+    width: 185px
+  .left, .right
+    display: none !important
+  #intro
+    text-align: center
+    font-size: 4vw
+  #heading
+    font-size: 10vw
+  #process_img
+    display: none
+  #process_background
+    top: 10vw !important
+    left: 5vw !important
+    right: 5vw !important
+    bottom: 10vw !important
+  #products
+    height: 305vw
+  #catalogue
+    display: none
+  #products .content .heading
+    text-align: center
+  #products_background
+    top: 10vw !important
+    left: 5vw !important
+    right: 5vw !important
+    bottom: 10vw !important
+  #products .content .heading
+    padding-top: 22vw
+  #info_container img
+    width: 35vw
+  #contact_info
+    margin: 0 !important
+  .contact_heading, .contact_content
+    font-size: 3vw
+    line-height: 5vw !important
+  #info_container
+    flex-direction: column !important
+    flex-wrap: wrap
+    height: 40vw
+    padding: 0 10vw 0 10vw
+    align-content: space-between
+    box-sizing: border-box
+  #contact_logo
+    display: none !important
+  #latte, #mocha, #black
+    display: none !important
+
+
+/* Tab */
+@media only screen and (min-width: 768px) and (max-width : 1024px)
+  #home, #process, #products
+    height: 100%
+    width: 100%
+    display: flex
+    justify-content: space-around
+  #process, #products
+    height: 80% !important
+  .left, .right
+    display: none !important
+  #home .content
+    padding-left: 90px
+  .content
+    width: $tab-width
+    box-sizing: border-box
+    //background: $transparent
+    padding: 30px
+  #home .content
+    display: flex
+    justify-content: center
+    flex-direction: column
+  #nav_content
+    width: $tab-width
+    font-size: 12px
+  #home
+    background: url(../assets/tab/2x/cover.jpg) center/cover no-repeat
+  #intro
+    font-size: 18px
+    width: 350px
+  #heading
+    font-size: 48px
+  #process_background, #products_background
+    width: 665px
+    height: 355px
+  #process_background
+    right: 15px !important
+    top: 50%
+    -webkit-transform: translate(0, -50%)
+    -moz-transform: translate(0, -50%)
+    -o-transform: translate(0, -50%)
+    transform: translate(0, -50%)
+  #products_background
+    left: 15px !important
+  #process_img div
+    height: 161px
+    width: 107px
+  .heading
+    font-size: 28px
+  .paragraph
+    font-size: 16px
+  #catalogue_container div
+    width: 200px
+    height: 239px
+    font-size: 32px
+  #products .content .heading
+    margin-left: -30px
+    margin-top: 80px
+  #product2
+    left: 25%
+  #product3
+    right: 25%
+  #process_img2
+    display: none
+  #catalogue1
+    display: none
+  #products .content
+    display: flex
+    flex-direction: column
+    justify-content: center
+  #products_background
+    top: 50%
+    -webkit-transform: translate(0, -50%)
+    -moz-transform: translate(0, -50%)
+    -o-transform: translate(0, -50%)
+    transform: translate(0, -50%)
+    left: -30px
+  #nav1
+    display: none
+  #contact_logo img
+    width: 150px
+  .contact_heading, .contact_content
+    font-size: 12px
+  .contact_content
+    line-height: 20px !important
+  .content_container
+    width: $tab-width
+  .content_container img
+    width: 450px
+  .checkout
+    height: 60%
+    font-size: 16px
+    & .heading
+      font-size: 40px !important
+
+
+/* Desktop */
+@media only screen and (min-width : 1025px) and (max-width: 1823px)
+  #home, #process, #products
+    height: 100%
+    width: 100%
+    display: flex
+    justify-content: space-around
+  #home
+    background: url(../assets/desk/2x/cover.jpg) center/cover no-repeat
+  .content
+    width: $desk-width
+  #home .content
+    display: flex
+    justify-content: center
+    flex-direction: column
+  .left, .right
+    font-size: 12px
+  .left
+    padding-right: 48px
+  #nav_content
+    width: $desk-width
+    font-size: 16px
+  #intro
+    font-size: 24px
+    width: 483px
+  #process_background, #products_background
+    width: 952px
+    height: 509px
+  #process_background
+    top: 50%
+    right: -30px
+    -webkit-transform: translate(0, -50%)
+    -moz-transform: translate(0, -50%)
+    -o-transform: translate(0, -50%)
+    transform: translate(0, -50%)
+  #process_img div
+    height: 258px
+    width: 172px
+  #heading
+    font-size: 67px
+  .heading
+    font-size: 40px
+  .paragraph
+    font-size: 20px
+    line-height: 30px
+  #catalogue_container div
+    width: 277px
+    height: 322px
+    font-size: 48px
+  #products .content .heading
+    margin-left: -60px
+  #product2
+    left: 25%
+  #product3
+    right: 20%
+  #process_img
+    width: 380px
+    //background: $transparent
+    position: relative
+  #process_img2
+    display: none
+  #catalogue1
+    display: none
+  #products .content
+    display: flex
+    flex-direction: column
+    justify-content: center
+  #products_background
+    top: 50%
+    -webkit-transform: translate(0, -50%)
+    -moz-transform: translate(0, -50%)
+    -o-transform: translate(0, -50%)
+    transform: translate(0, -50%)
+    left: -30px
+  #nav1
+    display: none
+  #contact_logo img
+    width: 200px
+  .content_container
+    width: $desk-width
+  .checkout
+    height: 75%
+    min-width: 40%
+    font-size: 18px
